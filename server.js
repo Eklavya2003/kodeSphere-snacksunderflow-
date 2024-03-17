@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.get("/", async (req, res) => {
   try {
     const response = await axios.get(
-      "https://kodessphere-api.vercel.app/devices/2KwzXxs"
+      "https://kodessphere-api.vercel.app/devices/rs9pPCR"
     );
 
     console.log(response.data);
@@ -35,7 +35,7 @@ app.get("/", async (req, res) => {
 app.post("/submitfan", async (req, res) => {
   try {
     const requestBody = {
-      teamid: "2KwzXxs",
+      teamid: "rs9pPCR",
       device: "fan",
       value: req.body.value,
     };
@@ -59,7 +59,7 @@ app.post("/submitfan", async (req, res) => {
 app.post("/submitbulb", async (req, res) => {
   try {
     const requestBody = {
-      teamid: "2KwzXxs",
+      teamid: "rs9pPCR",
       device: "bulb",
       value: req.body.value,
     };
@@ -83,7 +83,7 @@ app.post("/submitbulb", async (req, res) => {
 app.post("/submitbulb", async (req, res) => {
   try {
     const requestBody = {
-      teamid: "2KwzXxs",
+      teamid: "rs9pPCR",
       device: "ac",
       value: { temp: req.body.speed, state: req.body.value },
     };
@@ -107,7 +107,7 @@ app.post("/submitbulb", async (req, res) => {
 app.post("/submitled", async (req, res) => {
   try {
     const requestBody = {
-      teamid: "2KwzXxs",
+      teamid: "rs9pPCR",
       device: "bulb",
       value: req.body.value,
     };
